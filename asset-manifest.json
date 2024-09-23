@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa10054f.css",
+    "main.js": "/static/js/main.e6b4ebcf.js",
+    "static/media/skillseeker.png": "/static/media/skillseeker.c94224ccbb2e22065e72.png",
+    "static/media/linkedin.png": "/static/media/linkedin.b1bebb391a157454d569.png",
+    "static/media/studyspacesearch.png": "/static/media/studyspacesearch.cbb2a650ad120cbbfd11.png",
+    "static/media/linkedpad.png": "/static/media/linkedpad.08871915ac72769fd5ac.png",
+    "static/media/fantasywordprediction.png": "/static/media/fantasywordprediction.e8204cfb3a482c420645.png",
+    "static/media/modules.png": "/static/media/modules.d5073e1a3806c1bef765.png",
+    "index.html": "/index.html",
+    "main.fa10054f.css.map": "/static/css/main.fa10054f.css.map",
+    "main.e6b4ebcf.js.map": "/static/js/main.e6b4ebcf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa10054f.css",
+    "static/js/main.e6b4ebcf.js"
+  ]
+}
