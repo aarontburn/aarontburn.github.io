@@ -51,7 +51,8 @@ export function ProjectDetailsPage(props: any) {
                 <br />
                 <div style={{ fontSize: '19px' }}>{project.longDesc ?? project.desc}</div>
                 <br />
-                <BoldSectionHeader>Features:</BoldSectionHeader>
+                {project.features ? <BoldSectionHeader>Features:</BoldSectionHeader> : ''}
+                
                 <br />
                 <div style={{ fontSize: '19px' }}>{project.features ?? ''}</div>
                 <br />
@@ -63,7 +64,7 @@ export function ProjectDetailsPage(props: any) {
     </div>
 }
 
-function BoldSectionHeader({ fontSize, children }: { fontSize?: number, children?: ReactNode }) {
+export function BoldSectionHeader({ fontSize, children }: { fontSize?: number, children?: ReactNode }) {
     return <h1 style={{ fontWeight: 550, fontSize: fontSize ?? 32 }}>{children}</h1>
 }
 

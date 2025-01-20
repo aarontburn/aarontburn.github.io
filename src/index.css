@@ -12,6 +12,14 @@ code {
     monospace;
 }
 
+.pdf #header-bar {
+  display: none;
+}
+
+.pdf #pdf-renderer {
+  border: 1px solid black;
+}
+
 
 /* width */
 ::-webkit-scrollbar {

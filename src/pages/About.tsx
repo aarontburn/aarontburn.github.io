@@ -19,7 +19,7 @@ const Bold = ({ children }: { children?: ReactNode }) => {
 
 const SkillSection = ({ title, children }: { title: string, children?: ReactNode }) => {
     return <p style={{ marginBottom: '0.5em' }}>
-        <span style={{ fontWeight: BOLD_WEIGHT }}>{title}</span>
+        <span style={{ fontWeight: BOLD_WEIGHT }}>{title + ": "}</span>
         {children}
     </p>
 }
@@ -75,19 +75,22 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
 
 
                 <Section title='Technical Skills'>
-                    <SkillSection title='Languages: '>
+                    <SkillSection title='Languages'>
                         Java, JavaScript, TypeScript, Python, SQL, HTML, CSS, C, C#, PHP
                     </SkillSection>
-                    <SkillSection title='Frameworks/Libraries: '>
-                        Electron.js, Node.js, React.js, Java Swing, JavaFX, jQuery, Express.js, JUnit, NLTK, Tkinter
+                    <SkillSection title='Frameworks/Libraries'>
+                        Node.js, React.js, Electron.js, Java Swing, JavaFX, jQuery, Express.js, JUnit, NLTK, Tkinter
                     </SkillSection>
-                    <SkillSection title='Technologies: '>
-                        MongoDB, Google Firebase, Google Cloud Platform (GCP), Oracle Cloud Database, MySQL, Maven, Git/GitHub, Linux, IntelliJ IDEA,
-                        PyCharm, VS Code, MERN, Android Studio, Unity, Ubuntu, Eclipse, Autodesk Fusion
+                    <SkillSection title='Technologies'>
+                        Google Firebase, Google Cloud Platform (GCP), Amazon Web Services (AWS), 
+                        Oracle Cloud Database, MongoDB, MySQL, Maven, Git/GitHub, Linux, MERN, Ubuntu
                     </SkillSection>
-                    <SkillSection title='Others: '>
+                    <SkillSection title='Programs'>
+                        IntelliJ IDEA, PyCharm, VS Code, Android Studio, Unity, Eclipse, Autodesk Fusion
+                    </SkillSection>
+                    <SkillSection title='Others'>
                         Object-Oriented Programming (OOP), Agile, Scrum, Full-Stack, Web Development, Mobile Development, Version Control, Unit Testing,
-                        Front-end, Back-end, Natural Language Processing (NLP), Functional Programming, 3D Modeling
+                        Front-end, Back-end, Natural Language Processing (NLP), Functional Programming, 3D Modeling, Model-View-Controller (MVC) 
                     </SkillSection>
                 </Section>
 
@@ -95,11 +98,11 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
 
                     <SplitSection
                         left={<Bold>Bachelors of Science in Computer Science</Bold>}
-                        right={<p>Expected December 2024</p>} />
+                        right={<p>September 2022 - December 2024</p>} />
 
                     <SplitSection
                         left={<p>University of Washington</p>}
-                        right={<p>GPA: 3.84/4.0</p>} />
+                        right={<p>GPA: 3.85/4.0</p>} />
 
                     <Dropdown text='Relevant Coursework'>
                         {(() => {
@@ -147,7 +150,7 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
                 <Section title='Work Experience'>
                     <SplitSection
                         left={<Bold>Undergraduate Computer Science Teaching Assistant</Bold>}
-                        right={<p>March 2023 – Present</p>} />
+                        right={<p>March 2023 – December 2024</p>} />
 
                     <SplitSection
                         left={<p>University of Washington</p>}
