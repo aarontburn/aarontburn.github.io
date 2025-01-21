@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ae45f02.css",
+    "main.js": "/static/js/main.677be7b0.js",
+    "static/media/skillseeker.png": "/static/media/skillseeker.c94224ccbb2e22065e72.png",
+    "static/media/project_report.pdf": "/static/media/project_report.f5144ace3e8c9671370f.pdf",
+    "static/media/project_metrics.pdf": "/static/media/project_metrics.ee8ff4bb2684e8db18bd.pdf",
+    "static/media/linkedin.png": "/static/media/linkedin.b1bebb391a157454d569.png",
+    "static/media/studyspacesearch.png": "/static/media/studyspacesearch.cbb2a650ad120cbbfd11.png",
+    "static/media/linkedpad.png": "/static/media/linkedpad.08871915ac72769fd5ac.png",
+    "static/media/fantasywordprediction.png": "/static/media/fantasywordprediction.e8204cfb3a482c420645.png",
+    "static/media/modules.png": "/static/media/modules.d5073e1a3806c1bef765.png",
+    "index.html": "/index.html",
+    "main.7ae45f02.css.map": "/static/css/main.7ae45f02.css.map",
+    "main.677be7b0.js.map": "/static/js/main.677be7b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ae45f02.css",
+    "static/js/main.677be7b0.js"
+  ]
+}
