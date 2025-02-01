@@ -217,8 +217,8 @@ const projects: ProjectDetails[] = [
     },
     {
         id: "imagetransformationcasestudy",
-        name: "Case Study: Image Transformation in Java versus Python",
-        desc: "A case study for Java versus Python for image processing on AWS.",
+        name: "Case Study: Image Transformation in Java vs. Python",
+        desc: "A case study to compare Java and Python with image processing on AWS.",
         repoLink: "https://github.com/aarontburn/Java-vs-Python-Image-Processing",
         image: placeholderImage,
         stack: {

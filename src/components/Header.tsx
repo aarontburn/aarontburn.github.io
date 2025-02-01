@@ -4,7 +4,7 @@ import linkedInLogo from '../res/linkedin.png';
 import './Header.css';
 
 
-const FONT_SIZE: string = '1.75em';
+const FONT_SIZE: string = '1.5em';
 
 export function Header({ callback }: { callback: (v: any) => void }) {
     return <>

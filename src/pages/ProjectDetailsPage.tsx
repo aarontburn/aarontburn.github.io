@@ -18,7 +18,8 @@ export function ProjectDetailsPage(props: any) {
             <div id="left">
 
                 <img src={project.image} style={{ width: '100%' }} alt="Project Sample" />
-                <h1 style={{ fontSize: '50px' }}>{project.name}</h1>
+                <h1 style={{ fontSize: '2.5em' }}>{project.name}</h1>
+                <br/>
                 {
                     (() => {
                         if (typeof project.repoLink === 'string') {
@@ -33,7 +34,7 @@ export function ProjectDetailsPage(props: any) {
                 }
 
                 <br />
-                <div style={{ fontSize: '16px' }}>{project.desc}</div>
+                <div style={{ fontSize: '1em' }}>{project.desc}</div>
                 <br />
                 <BoldSectionHeader>Technology Stack</BoldSectionHeader>
                 <br />
@@ -49,12 +50,12 @@ export function ProjectDetailsPage(props: any) {
             <div id="right">
                 <BoldSectionHeader>Summary:</BoldSectionHeader>
                 <br />
-                <div style={{ fontSize: '19px' }}>{project.longDesc ?? project.desc}</div>
+                <div style={{ fontSize: '1em' }}>{project.longDesc ?? project.desc}</div>
                 <br />
                 {project.features ? <BoldSectionHeader>Features:</BoldSectionHeader> : ''}
                 
                 <br />
-                <div style={{ fontSize: '19px' }}>{project.features ?? ''}</div>
+                <div style={{ fontSize: '1em' }}>{project.features ?? ''}</div>
                 <br />
                 <br />
                 <br />
@@ -64,8 +65,8 @@ export function ProjectDetailsPage(props: any) {
     </div>
 }
 
-export function BoldSectionHeader({ fontSize, children }: { fontSize?: number, children?: ReactNode }) {
-    return <h1 style={{ fontWeight: 550, fontSize: fontSize ?? 32 }}>{children}</h1>
+export function BoldSectionHeader({ fontSize, children }: { fontSize?: number | string, children?: ReactNode }) {
+    return <h1 style={{ fontWeight: 550, fontSize: fontSize ?? "2em" }}>{children}</h1>
 }
 
 function TechnologySection({ name, items }: { name: string, items: string[] | undefined }) {
@@ -74,7 +75,7 @@ function TechnologySection({ name, items }: { name: string, items: string[] | un
     }
 
     return <div>
-        <BoldSectionHeader fontSize={20}>{name}</BoldSectionHeader>
+        <BoldSectionHeader fontSize={"1.5em"}>{name}</BoldSectionHeader>
         <p style={{ marginLeft: "1em" }}>
             {items.join(", ")}
         </p>

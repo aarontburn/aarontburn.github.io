@@ -6,7 +6,7 @@ export function Projects({ changePage }: { changePage: (path: string) => void })
     return <>
         <div className="page" id='projects-page'>
             <div id='projects-body'>
-                <h1 style={{ fontSize: '4em' }}>Projects</h1>
+                <h1 style={{ fontSize: '3.5em' }}>Projects</h1>
 
 
                 <div id='project-outer-container'>
@@ -32,7 +32,7 @@ function Project({ changePage, details }: { changePage: (path: string) => void, 
                 <img src={details.image} alt={`Project '${details.name}' image.`} />
 
             </div>
-            <h1 className='project-name'>{details.name}</h1>
+            <h1 className='project-name' style={{fontSize: details.name.length > 15 ? "1.5em" : "2em"}}>{details.name}</h1>
 
             <br />
             <p className='project-desc'>{details.desc}</p>
