@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
-export const Spacer = () => {
-    return <div style={{ marginRight: 'auto' }}></div>;
+export const Spacer = ({ size = "auto" }) => {
+    return <div style={{ marginRight: size }}></div>;
 }
 
 

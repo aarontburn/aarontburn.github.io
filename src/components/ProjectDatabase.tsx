@@ -41,8 +41,8 @@ const Link = ({ link, children }: { link: string, children?: ReactNode }) => <sp
 
 const projects: ProjectDetails[] = [
     {
-        id: 'modules',
-        name: "Modules",
+        id: 'nexus',
+        name: "Nexus",
         desc: "Cross-platform desktop to enable to creation and installation of Node.js plugins.",
         image: modulesImage,
         repoLink: 'https://github.com/aarontburn/modules',

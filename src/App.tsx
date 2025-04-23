@@ -3,22 +3,22 @@ import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
-import { Contact } from './pages/Contact';
 import { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { AnimatePresence } from 'framer-motion';
 import { Transition } from './components/Transitions';
 import { ProjectDetailsPage } from './pages/ProjectDetailsPage';
+import { NexusRoot } from './nexus/NexusRoot';
 
 
 export default function App() {
 	const [_, setSelectedTab] = useState('/');
 	const location = useLocation();
-	const [isHomePage, setIsHomePage] = useState(location.pathname === "/");
+	const [showHeader, setShowHeader] = useState(location.pathname === "/");
 	const nav = useNavigate();
 
 	useEffect(() => {
-		setIsHomePage(location.pathname === "/");
+		setShowHeader(location.pathname === "/" || location.pathname.split("/")[1] === "nexus");
 	}, [location.pathname]);
 
 
@@ -31,7 +31,7 @@ export default function App() {
 	return (
 		<>
 			<AnimatePresence mode='wait'>
-				{!isHomePage && (
+				{!showHeader && (
 					<Transition>
 						<Header callback={changePage} />
 					</Transition>
@@ -44,7 +44,7 @@ export default function App() {
 					<Route path="/about" element={<Transition><About changePage={changePage} /></Transition>} />
 					<Route path="/projects" element={<Transition><Projects changePage={changePage} /></Transition>} />
 					<Route path="/projects/:id" element={<Transition><ProjectDetailsPage /></Transition>} />
-					<Route path="/contact" element={<Transition><Contact /></Transition>} />
+					<Route path="/nexus/*" element={<Transition><NexusRoot /></Transition>} />
 				</Routes>
 			</ AnimatePresence>
 		</>

@@ -13,6 +13,7 @@ export function Header({ callback }: { callback: (v: any) => void }) {
             <NavButton displayText={"Aaron Burnham"} callback={() => callback('/')} fontSize={FONT_SIZE} />
             <NavButton displayText={"About"} callback={() => callback('/about')} fontSize={FONT_SIZE} />
             <NavButton displayText={"Projects"} callback={() => callback('/projects')} fontSize={FONT_SIZE} />
+            <NavButton displayText={"Nexus"} callback={() => callback('/nexus')} fontSize={FONT_SIZE} />
 
             <Spacer />
 

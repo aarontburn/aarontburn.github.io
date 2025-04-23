@@ -10,11 +10,9 @@ export function Projects({ changePage }: { changePage: (path: string) => void })
 
 
                 <div id='project-outer-container'>
-                    <div id='project-container'>
-                        {ProjectDatabase.getProjects().map(
-                            project =>
-                                <Project key={project.id} changePage={changePage} details={project} />)}
-                    </div>
+                    {ProjectDatabase.getProjects().map(
+                        project =>
+                            <Project key={project.id} changePage={changePage} details={project} />)}
                 </div>
 
             </div>
@@ -26,7 +24,7 @@ export function Projects({ changePage }: { changePage: (path: string) => void })
 
 
 function Project({ changePage, details }: { changePage: (path: string) => void, details: ProjectDetails }) {
-    return <div style={{ display: 'inline-block' }}>
+    return <div>
         <div className='project' onClick={() => changePage("/projects/" + details.id)}>
             <div className='project-image-container'>
                 <img src={details.image} alt={`Project '${details.name}' image.`} />
