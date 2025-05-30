@@ -26,7 +26,7 @@ export const nexusSiteDetails: ProjectDetails = {
     desc: 'The official landing page for Nexus.',
     repoLink: <div>
         <p>GitHub Repository:</p>
-        <Link link='https://github.com/aarontburn/nexus-site'>https://github.com/aarontburn/nexus-core</Link>
+        <Link link='https://github.com/aarontburn/nexus-site'>https://github.com/aarontburn/nexus-site</Link>
         <p>Official Landing Page:</p>
         <Link link='https://www.nexus-app.net/'>https://www.nexus-app.net/</Link>
     </div>,
