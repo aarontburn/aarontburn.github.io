@@ -22,12 +22,12 @@ const images: readonly string[] = [
 
 export const nexusSiteDetails: ProjectDetails = {
     id: 'nexus-site',
-    name: 'Nexus Landing Page',
-    desc: 'The official landing page for Nexus.',
+    name: 'Nexus Website',
+    desc: 'The official website for Nexus.',
     repoLink: <div>
         <p>GitHub Repository:</p>
         <Link link='https://github.com/aarontburn/nexus-site'>https://github.com/aarontburn/nexus-site</Link>
-        <p>Official Landing Page:</p>
+        <p>Official Website:</p>
         <Link link='https://www.nexus-app.net/'>https://www.nexus-app.net/</Link>
     </div>,
     image: nexusImage,
@@ -38,7 +38,7 @@ export const nexusSiteDetails: ProjectDetails = {
     },
     longDesc: <>
         <p>
-            Developed a landing page for Nexus, a cross-platform application loader aimed to consolidate tools
+            Developed a website for Nexus, a cross-platform application loader aimed to consolidate tools
             and applications into a single application.
         </p>
     </>,

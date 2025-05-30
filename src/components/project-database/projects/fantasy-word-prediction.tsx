@@ -40,7 +40,7 @@ export const fantasyWordPrediction: ProjectDetails = {
         <List text='Clean dataset'>
             <li>
                 Implemented a custom dataset cleaner to strip away illegal characters and replace character
-                variants with their standardized version (<Italic>e.g.</Italic> “ (U+201C) → ” (U+0022))
+                variants with their standardized version (<Italic>e.g.</Italic> “ (U+201C) to ” (U+0022))
             </li>
         </List>
         <List text="Custom word parser">

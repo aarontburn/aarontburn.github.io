@@ -19,7 +19,7 @@ export function NavButton({ displayText, callback, fontSize, image, width }: { d
     if (image === undefined) {
         return <h2 className="nav-button" style={{ fontSize: fontSize, width: width }} onClick={callback}>{displayText}</h2>
     }
-    return <div onClick={callback} className="logo-nav" style={{ width: width }}>
+    return <div onClick={callback} className="nav-button logo-nav" style={{ width: width }}>
         <img style={{ width: fontSize, height: fontSize }} src={image} alt="Logo" />
         <h2 style={{ fontSize: fontSize }}>{displayText}</h2>
     </div>

@@ -1,7 +1,7 @@
 #header {
     display: flex;
-    margin: 0.5rem 0;
-    flex-direction: row;
+    padding: 0.5rem 0;
+    display: flex;
     align-items: center;
 
     width: 100%;
@@ -13,7 +13,6 @@
 .header-group {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -25,10 +24,10 @@
     border: 1px solid var(--color-1);
     cursor: pointer;
     border-radius: 5px;
-    white-space: nowrap;
 
     &:hover {
-        background-color: var(--color-2);
+        color: var(--accent-color);
+        background-color: rgb(237, 237, 237);
         border: 1px solid var(--color-2);
         border-radius: 15px;
     }
@@ -36,21 +35,9 @@
 
 
 .logo-nav {
-    box-sizing: content-box;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    transition: 0.2s;
-    padding: 0.5em 1em;
-    border: 1px solid var(--color-1);
-    cursor: pointer;
-    border-radius: 5px;
-
-    &:hover {
-        background-color: var(--color-2);
-        border-radius: 15px;
-    }
 }
 
 .logo-nav>img {

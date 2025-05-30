@@ -13,18 +13,18 @@ const images: readonly string[] = [
 
 export const nexusAppDetails: ProjectDetails = {
     id: 'nexus',
-    name: "Nexus",
+    name: "Nexus App",
     desc: "A cross-platform application environment and loader.",
     image: nexusImage,
     repoLink: <>
         <p>GitHub Repository:</p>
         <Link link='https://github.com/aarontburn/nexus-core'>https://github.com/aarontburn/nexus-core</Link>
-        <p>Official Landing Page:</p>
+        <p>Official Website:</p>
         <Link link='https://www.nexus-app.net/'>https://www.nexus-app.net/</Link>
         <br />
     </>,
     stack: {
-        languages: ["JavaScript", "TypeScript", "HTML", "CSS", "Markdown", "JSON"],
+        languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
         frameworksOrLibraries: ["Electron.js", "React.js", "Node.js"],
         technologies: ["Git/GitHub", "Electron Builder"]
     },

@@ -1,9 +1,8 @@
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 import { BoldSectionHeader } from "../../../pages/projects/details-page/ProjectDetailsPage";
 import { Bold, List } from "../../Components";
-import placeholderImage from '../../../res/placeholder_image.png';
 import { ProjectDetails } from "../ProjectDatabase";
-
+import logo from "../images/case-study-logo.png"
 
 
 export const imageTransformationDetails: ProjectDetails = {
@@ -11,7 +10,7 @@ export const imageTransformationDetails: ProjectDetails = {
     name: "Case Study: Image Transformation in Java vs. Python",
     desc: "A case study to compare Java and Python with image processing on AWS.",
     repoLink: "https://github.com/aarontburn/Java-vs-Python-Image-Processing",
-    image: placeholderImage,
+    image: logo,
     stack: {
         languages: ["Java", "Python", "JavaScript"],
         technologies: [

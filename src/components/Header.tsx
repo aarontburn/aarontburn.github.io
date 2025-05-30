@@ -9,6 +9,7 @@ const FONT_SIZE: string = '1.5rem';
 export function Header({ callback }: { callback: (v: any) => void }) {
     return <>
         <div id='header'>
+            <Spacer size='1rem' />
             <NavButton displayText={"Aaron Burnham"} callback={() => callback('/')} fontSize={FONT_SIZE} />
             <Spacer size='1rem' />
             
@@ -23,6 +24,7 @@ export function Header({ callback }: { callback: (v: any) => void }) {
                 <NavButton displayText={"LinkedIn"} image={linkedInLogo} callback={() => openLink("LinkedIn")} fontSize={FONT_SIZE} />
                 <NavButton displayText={"GitHub"} image={githubLogo} callback={() => openLink("GitHub")} fontSize={FONT_SIZE} />
             </div>
+            <Spacer size='1rem' />
 
 
         </div>

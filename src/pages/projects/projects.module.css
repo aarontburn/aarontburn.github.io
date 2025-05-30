@@ -92,6 +92,8 @@
 .project-image-container img {
     max-width: 20rem;
     max-height: 8rem;
+    border-radius: 1rem;
+
 }
 
 
