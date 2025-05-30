@@ -1,14 +1,13 @@
 import './App.css';
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import { Home } from './pages/Home';
-import { About } from './pages/About';
-import { Projects } from './pages/Projects';
+import { About } from './pages/about/About';
 import { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { AnimatePresence } from 'framer-motion';
 import { Transition } from './components/Transitions';
-import { ProjectDetailsPage } from './pages/ProjectDetailsPage';
-import { NexusRoot } from './nexus/NexusRoot';
+import { Home } from './pages/home/Home';
+import { ProjectDetailsPage } from './pages/projects/details-page/ProjectDetailsPage';
+import { Projects } from './pages/projects/Projects';
 
 
 export default function App() {
@@ -44,7 +43,6 @@ export default function App() {
 					<Route path="/about" element={<Transition><About changePage={changePage} /></Transition>} />
 					<Route path="/projects" element={<Transition><Projects changePage={changePage} /></Transition>} />
 					<Route path="/projects/:id" element={<Transition><ProjectDetailsPage /></Transition>} />
-					<Route path="/nexus/*" element={<Transition><NexusRoot /></Transition>} />
 				</Routes>
 			</ AnimatePresence>
 		</>

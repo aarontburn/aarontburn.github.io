@@ -4,16 +4,18 @@ import linkedInLogo from '../res/linkedin.png';
 import './Header.css';
 
 
-const FONT_SIZE: string = '1.5em';
+const FONT_SIZE: string = '1.5rem';
 
 export function Header({ callback }: { callback: (v: any) => void }) {
     return <>
         <div id='header'>
-
             <NavButton displayText={"Aaron Burnham"} callback={() => callback('/')} fontSize={FONT_SIZE} />
-            <NavButton displayText={"About"} callback={() => callback('/about')} fontSize={FONT_SIZE} />
-            <NavButton displayText={"Projects"} callback={() => callback('/projects')} fontSize={FONT_SIZE} />
-            <NavButton displayText={"Nexus"} callback={() => callback('/nexus')} fontSize={FONT_SIZE} />
+            <Spacer size='1rem' />
+            
+            <div className='header-group'>
+                <NavButton displayText={"About"} callback={() => callback('/about')} fontSize={FONT_SIZE} />
+                <NavButton displayText={"Projects"} callback={() => callback('/projects')} fontSize={FONT_SIZE} />
+            </div>
 
             <Spacer />
 

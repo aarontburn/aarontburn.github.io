@@ -5,6 +5,16 @@ export const Spacer = ({ size = "auto" }) => {
 }
 
 
+export const Bold = ({ children }: { children?: ReactNode }) => <span style={{ fontWeight: 550 }}>{children}</span>;
+export const Italic = ({ children }: { children?: ReactNode }) => <span style={{ fontStyle: "italic" }}>{children}</span>
+export const Link = ({ link, children }: { link: string, children?: ReactNode }) => <a
+    style={{ color: 'blue', cursor: 'pointer' }}
+    href={link}
+    target='_blank'
+>
+    {children}
+</a>
+
 export function NavButton({ displayText, callback, fontSize, image, width }: { displayText: string, callback: () => void, fontSize: string, image?: string, width?: string }) {
     if (image === undefined) {
         return <h2 className="nav-button" style={{ fontSize: fontSize, width: width }} onClick={callback}>{displayText}</h2>
@@ -24,13 +34,6 @@ export function List({ text, children }: { text: string | ReactNode, children?: 
         </div>
     </>
 }
-
-export function Bold({ children }: { children?: ReactNode }) {
-    return <div style={{ fontWeight: 550 }}>
-        {children}
-    </div>
-}
-
 
 
 const LINKEDIN_URL: string = 'https://www.linkedin.com/in/aaronburnham/';
