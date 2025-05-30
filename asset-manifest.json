@@ -1,21 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.9831f5e9.css",
-    "main.js": "/static/js/main.ed89b93b.js",
-    "static/media/skillseeker.png": "/static/media/skillseeker.c94224ccbb2e22065e72.png",
+    "main.css": "/static/css/main.f06237d9.css",
+    "main.js": "/static/js/main.0fb942a2.js",
     "static/media/project_report.pdf": "/static/media/project_report.f5144ace3e8c9671370f.pdf",
+    "static/media/spotify-monkey.png": "/static/media/spotify-monkey.bea4e07d699c73d3756a.png",
+    "static/media/home.png": "/static/media/home.7c1236d044ada989712a.png",
+    "static/media/manage.png": "/static/media/manage.3a5b11c31c8dd1444467.png",
+    "static/media/marketplace-account.png": "/static/media/marketplace-account.04d18c66d11b88421fdc.png",
     "static/media/project_metrics.pdf": "/static/media/project_metrics.ee8ff4bb2684e8db18bd.pdf",
     "static/media/linkedin.png": "/static/media/linkedin.b1bebb391a157454d569.png",
-    "static/media/studyspacesearch.png": "/static/media/studyspacesearch.cbb2a650ad120cbbfd11.png",
+    "static/media/develop.png": "/static/media/develop.6fe276937e0fa94cbe73.png",
+    "static/media/marketplace-home.png": "/static/media/marketplace-home.a70971f3faaeb4e7d42b.png",
+    "static/media/settings.png": "/static/media/settings.dd50b52be2648e4f305c.png",
+    "static/media/marketplace-module.png": "/static/media/marketplace-module.2a3f3ee428985cb668e1.png",
+    "static/media/marketplace-edit.png": "/static/media/marketplace-edit.9b42d9baa9dbb6422cb4.png",
+    "static/media/marketplace-login.png": "/static/media/marketplace-login.52fbe024e3e6bc4dbb6b.png",
+    "static/media/studyspacesearchlogo.png": "/static/media/studyspacesearchlogo.6552705b3a7a3741a63d.png",
     "static/media/linkedpad.png": "/static/media/linkedpad.08871915ac72769fd5ac.png",
     "static/media/fantasywordprediction.png": "/static/media/fantasywordprediction.e8204cfb3a482c420645.png",
-    "static/media/modules.png": "/static/media/modules.d5073e1a3806c1bef765.png",
+    "static/media/nexus-logo.png": "/static/media/nexus-logo.e75c9f8c7250ad932d5c.png",
     "index.html": "/index.html",
-    "main.9831f5e9.css.map": "/static/css/main.9831f5e9.css.map",
-    "main.ed89b93b.js.map": "/static/js/main.ed89b93b.js.map"
+    "main.f06237d9.css.map": "/static/css/main.f06237d9.css.map",
+    "main.0fb942a2.js.map": "/static/js/main.0fb942a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.9831f5e9.css",
-    "static/js/main.ed89b93b.js"
+    "static/css/main.f06237d9.css",
+    "static/js/main.0fb942a2.js"
   ]
 }
