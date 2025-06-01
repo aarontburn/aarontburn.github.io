@@ -19,22 +19,23 @@ export function ProjectDetailsPage() {
 
                 <img src={project.image} alt="Project Sample" />
                 <h1 style={{ fontSize: '2.5em' }}>{project.name}</h1>
-                <br />
+                <div style={{marginTop: "1rem" }}></div>
+
                 {
                     (() => {
                         if (typeof project.repoLink === 'string') {
-                            return <p
-                                onClick={() => openLink(project.repoLink as string)}
-                                style={{ color: 'blue', cursor: 'pointer' }}>
+                            return <a
+                                target="_blank"
+                                href={project.repoLink}
+                            >
                                 {project.repoLink || ''}
-                            </p>
+                            </a>
                         }
                         return project.repoLink;
                     })()
                 }
-
-                <br />
-                <div style={{ fontSize: '1em' }}>{project.desc}</div>
+                
+                <div style={{ fontSize: '1em', marginTop: "1rem" }}>{project.desc}</div>
                 <br />
                 <BoldSectionHeader>Technology Stack</BoldSectionHeader>
                 <br />

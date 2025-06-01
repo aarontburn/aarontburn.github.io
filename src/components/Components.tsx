@@ -4,6 +4,10 @@ export const Spacer = ({ size = "auto" }) => {
     return <div style={{ marginRight: size }}></div>;
 }
 
+export const VerticalSpacer = ({ size = "auto" }) => {
+    return <div style={{ marginTop: size }}></div>;
+}
+
 
 export const Bold = ({ children }: { children?: ReactNode }) => <span style={{ fontWeight: 550 }}>{children}</span>;
 export const Italic = ({ children }: { children?: ReactNode }) => <span style={{ fontStyle: "italic" }}>{children}</span>

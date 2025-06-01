@@ -7,7 +7,7 @@ import nexusSiteMarketplaceLogin from "../images/nexus-site/marketplace-login.pn
 import nexusSiteMarketplaceModule from "../images/nexus-site/marketplace-module.png";
 import nexusImage from '../images/nexus-logo.png';
 import { ProjectDetails } from "../ProjectDatabase";
-import { Link } from "../../Components";
+import { Bold, Link, List } from "../../Components";
 
 const images: readonly string[] = [
     nexusSiteHome,
@@ -45,16 +45,26 @@ export const nexusSiteDetails: ProjectDetails = {
     features: <>
         <div className='features-list'>
             <ul>
-                <li>📌Latest Downloads: Find the latest releases for your operating system on the download page.</li>
-                <li>🛒 Module Marketplace: Users can upload their modules to the marketplace, allowing them to share their modules.</li>
+                <li>Optimized page viewing for both desktop and mobile browsers.</li>
+
+                <li><Bold>Latest Releases:</Bold> Find the latest releases for your operating system on the download page.</li>
+                <List text={<><Bold>Module Marketplace:</Bold> Users can upload their modules to the marketplace, allowing them to share their modules.</>}>
+                    <li>Utilized NextAuth.js to create a secure authentication system for developers to share their creations to the public.</li>
+                    <li>Deployed a back-end server using Next.js for efficient CRUD operations for data and user management.</li>
+                    <List text="Designed a release architecture that enforces developing open-source modules, creating a safer and community-oriented ecosystem.">
+                        <li>In order to release a module on the marketplace, developers must have a public GitHub repository.</li>
+                        <li>The upload process pulls information directly from the repository.</li>
+                        <li>Developers can upload their README.md to get parsed identically to a GitHub's repositories README.md</li>
+                    </List>
+                </List>
                 <li>
-                    📥Direct Downloads to Nexus: Integrates seamlessly with the Nexus desktop application by allowing users
+                    <Bold>Nexus Client Integration:</Bold> Works seamlessly with the Nexus desktop application by allowing users
                     to directly install modules from the marketplace to their Nexus client.
                 </li>
-                <li>
-                    📜 Developer Documentation: Features a developer page where comprehensive and extensive documentation is written for
-                    developing with Nexus, including start-to-finish guides, API references, and guides.
-                </li>
+                <List text={<><Bold>Developer Documentation</Bold>: Features a developer page where comprehensive and extensive documentation is written for
+                    developing with Nexus, including start-to-finish guides, API references, and guides.</>}>
+                    <li>Parses markdown files for styled and organized documents.</li>
+                </List>
             </ul>
         </div>
         <br />

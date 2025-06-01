@@ -26,7 +26,7 @@ const SkillSection = ({ title, children }: { title: string, children?: ReactNode
 
 const SplitSection = ({ left, right }: { left: ReactNode, right: ReactNode }) => {
     return <>
-        <div style={{ display: 'flex' }}>
+        <div className={styles['split-section']}>
             {left}
             <Spacer />
             {right}
@@ -40,7 +40,7 @@ const Dropdown = ({ children, text }: { children?: ReactNode, text: string }) =>
 
     return <div className={styles['dropdown-container']}>
         <p className={styles['dropdown-title']} onClick={() => setDropdownOpen((prevState) => !prevState)}>
-            <span className={styles['dropdown-caret']} style={{ transform: opened ? 'rotate(90deg)' : '' }}>{'⮞'} </span>
+            <span className={styles['dropdown-caret']} style={{ fontWeight: 500, transform: opened ? 'rotate(90deg)' : '' }}>{'>'} </span>
             <span className={styles['dropdown-text']}>{text}</span>
         </p>
 
@@ -64,8 +64,8 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
             <div id={styles['about-body']}>
                 <Section title='About Me'>
                     <p>
-                        Hi! My name is Aaron Burnham. I am pursuing a Bachelors of Science in Computer Science at the
-                        University of Washington. I have a passion for creating meaningful projects, exploring technologies, and learning new things.
+                        Hi! My name is Aaron Burnham. I am a software engineer; I graduated from the University of Washington with my Bachelors of Science in Computer Science.
+                        I have a passion for creating meaningful projects, exploring technologies, and learning new things.
                     </p>
                     <br />
                     <p>
@@ -82,7 +82,7 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
                         Node.js, React.js, Electron.js, Next.js, NextAuth.js Mongoose, Java Swing, JavaFX, jQuery, Express.js, JUnit, NLTK, Tkinter
                     </SkillSection>
                     <SkillSection title='Technologies'>
-                        Google Firebase, Google Cloud Platform (GCP), Amazon Web Services (AWS), 
+                        Google Firebase, Google Cloud Platform (GCP), Amazon Web Services (AWS),
                         Oracle Cloud Database, MongoDB, MySQL, Maven, Git/GitHub, Linux, MERN, Ubuntu,
                         Vercel
                     </SkillSection>
@@ -91,7 +91,7 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
                     </SkillSection>
                     <SkillSection title='Others'>
                         Object-Oriented Programming (OOP), Agile, Scrum, Full-Stack, Web Development, Mobile Development, Version Control, Unit Testing,
-                        Front-end, Back-end, Natural Language Processing (NLP), Functional Programming, 3D Modeling, Model-View-Controller (MVC) 
+                        Front-end, Back-end, Natural Language Processing (NLP), Functional Programming, 3D Modeling, Model-View-Controller (MVC)
                     </SkillSection>
                 </Section>
 

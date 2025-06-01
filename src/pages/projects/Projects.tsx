@@ -1,3 +1,4 @@
+import { VerticalSpacer } from '../../components/Components'
 import { ProjectDatabase, ProjectDetails } from '../../components/project-database/ProjectDatabase'
 import styles from './projects.module.css'
 
@@ -6,8 +7,8 @@ export function Projects({ changePage }: { changePage: (path: string) => void })
     return <>
         <div className="page" id={styles['projects-page']}>
             <div id={styles['projects-body']}>
+                <VerticalSpacer size='1rem' />
                 <h1 style={{ fontSize: '3rem' }}>Projects</h1>
-
 
                 <div id={styles['project-outer-container']}>
                     {ProjectDatabase.getProjects().map(
