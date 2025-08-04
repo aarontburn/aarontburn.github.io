@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9cef1d25.css",
-    "main.js": "/static/js/main.48d3a87b.js",
+    "main.js": "/static/js/main.5a8668bd.js",
     "static/media/project_report.pdf": "/static/media/project_report.f5144ace3e8c9671370f.pdf",
     "static/media/spotify-monkey.png": "/static/media/spotify-monkey.bea4e07d699c73d3756a.png",
     "static/media/home.png": "/static/media/home.7c1236d044ada989712a.png",
@@ -22,10 +22,10 @@
     "static/media/nexus-logo.png": "/static/media/nexus-logo.e75c9f8c7250ad932d5c.png",
     "index.html": "/index.html",
     "main.9cef1d25.css.map": "/static/css/main.9cef1d25.css.map",
-    "main.48d3a87b.js.map": "/static/js/main.48d3a87b.js.map"
+    "main.5a8668bd.js.map": "/static/js/main.5a8668bd.js.map"
   },
   "entrypoints": [
     "static/css/main.9cef1d25.css",
-    "static/js/main.48d3a87b.js"
+    "static/js/main.5a8668bd.js"
   ]
 }
