@@ -64,7 +64,7 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
             <div id={styles['about-body']}>
                 <Section title='About Me'>
                     <p>
-                        Hi! My name is Aaron Burnham. I am a software engineer; I graduated from the University of Washington with my Bachelors of Science in Computer Science.
+                        Hi! My name is Aaron Burnham, a software engineer working at Nordstrom.
                         I have a passion for creating meaningful projects, exploring technologies, and learning new things.
                     </p>
                     <br />
@@ -94,6 +94,80 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
                         Front-end, Back-end, Natural Language Processing (NLP), Functional Programming, 3D Modeling, Model-View-Controller (MVC)
                     </SkillSection>
                 </Section>
+
+                <Section title='Work Experience'>
+                    <SplitSection
+                        left={<Bold>Software Engineer</Bold>}
+                        right={<p>August 11th, 2025 – Present</p>} />
+
+                    <SplitSection
+                        left={<p>Nordstrom</p>}
+                        right={<p></p>} />
+
+                    <br />
+
+                    <SplitSection
+                        left={<Bold>Undergraduate Computer Science Teaching Assistant</Bold>}
+                        right={<p>March 27th, 2023 – December 20th, 2024</p>} />
+
+                    <SplitSection
+                        left={<p>University of Washington</p>}
+                        right={<p></p>} />
+
+                    <Dropdown text='Responsibilities'>
+                        <ul className={styles['section-desc']}>
+                            <li>
+                                Assists professors in supervising courses of 75+ students to understand fundamental computer science concepts.
+                            </li>
+                            <li>
+                                Independently leads weekly lab sections of 35+ students to review programming concepts and facilitate collaborative learning.
+                            </li>
+                            <li>
+                                Leads weekly 2+ hour office sessions to provide individualized drop-in tutoring and support for students.
+                            </li>
+                            <li>
+                                Grades student programming assignments and shares constructive feedback on ways they can improve.
+                            </li>
+                            <li>
+                                Prepares lesson plans independently and adapts instruction style to students' individual needs and abilities.
+                            </li>
+                        </ul>
+                    </Dropdown>
+
+                    <br />
+
+                    <SplitSection
+                        left={<Bold>Lifeguard and Swim Instructor</Bold>}
+                        right={<p>December 24th, 2018 – August 8th, 2025</p>} />
+
+                    <SplitSection
+                        left={<p>Seattle Parks and Recreation</p>}
+                        right={<p></p>} />
+
+
+                    <Dropdown text='Responsibilities'>
+                        <ul className={styles['section-desc']}>
+                            <li>
+                                Ensures water safety and emergency preparedness in swimming pool facilities for up to 200+ patrons at a time.
+                            </li>
+                            <li>
+                                Instructs youth aquatic lessons of 10+ students from diverse demographics and skill levels
+                            </li>
+                            <li>
+                                Trained 10+ new employees in understanding facility procedures and life-guarding practices.
+                            </li>
+                            <li>
+                                Developed confidence in communication and critical decision-making skills in time-sensitive, high-stress situations.
+                            </li>
+                            <li>
+                                American Red Cross certified in first-aid, CPR, AED, and emergency oxygen care.
+                            </li>
+                        </ul>
+                    </Dropdown>
+
+
+                </Section>
+
 
                 <Section title='Education'>
 
@@ -148,69 +222,6 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
 
                 </Section>
 
-                <Section title='Work Experience'>
-                    <SplitSection
-                        left={<Bold>Undergraduate Computer Science Teaching Assistant</Bold>}
-                        right={<p>March 2023 – December 2024</p>} />
-
-                    <SplitSection
-                        left={<p>University of Washington</p>}
-                        right={<p></p>} />
-
-                    <Dropdown text='Responsibilities'>
-                        <ul className='section-desc'>
-                            <li>
-                                Assists professors in supervising courses of 75+ students to understand fundamental computer science concepts.
-                            </li>
-                            <li>
-                                Independently leads weekly lab sections of 35+ students to review programming concepts and facilitate collaborative learning.
-                            </li>
-                            <li>
-                                Leads weekly 2+ hour office sessions to provide individualized drop-in tutoring and support for students.
-                            </li>
-                            <li>
-                                Grades student programming assignments and shares constructive feedback on ways they can improve.
-                            </li>
-                            <li>
-                                Prepares lesson plans independently and adapts instruction style to students' individual needs and abilities.
-                            </li>
-                        </ul>
-                    </Dropdown>
-
-                    <br />
-
-                    <SplitSection
-                        left={<Bold>Lifeguard and Swim Instructor</Bold>}
-                        right={<p>December 2018 – Present</p>} />
-
-                    <SplitSection
-                        left={<p>Seattle Parks and Recreation</p>}
-                        right={<p></p>} />
-
-
-                    <Dropdown text='Responsibilities'>
-
-                        <ul className={styles['section-desc']}>
-                            <li>
-                                Ensures water safety and emergency preparedness in swimming pool facilities for up to 200+ patrons at a time.
-                            </li>
-                            <li>
-                                Instructs youth aquatic lessons of 10+ students from diverse demographics and skill levels
-                            </li>
-                            <li>
-                                Trained 10+ new employees in understanding facility procedures and life-guarding practices.
-                            </li>
-                            <li>
-                                Developed confidence in communication and critical decision-making skills in time-sensitive, high-stress situations.
-                            </li>
-                            <li>
-                                American Red Cross certified in first-aid, CPR, AED, and emergency oxygen care.
-                            </li>
-                        </ul>
-                    </Dropdown>
-
-
-                </Section>
 
 
                 <Section title='Projects'>

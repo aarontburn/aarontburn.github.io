@@ -14,29 +14,47 @@
     border: 1px solid var(--color-1);
     width: fit-content;
     color: #6d6dff;
+
+    box-sizing: content-box;
+    transition: 0.2s;
+    padding: 0.25rem 1rem;
+    border: 1px solid var(--color-1);
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        color: var(--accent-color);
+        background-color: var(--color-2);
+        background-color: rgb(237, 237, 237);
+        border: 1px solid var(--color-2);
+        border-radius: 15px;
+    }
+
 }
 
-#projects-button:hover {
-    background-color: var(--color-2);
-}
 
 .section-desc {
     /* margin: 0 2em; */
     list-style-position: inside;
     list-style-type: '→ ';
+
+    &>* {
+        margin-top: 0.25em;
+
+    }
 }
 
-.section-desc>* {
-    margin-top: 0.25em;
-}
 
 .split-section {
     display: flex;
+
     @media (width < 768px) {
         flex-direction: column;
     }
 
 }
+
+
 
 
 
@@ -50,8 +68,8 @@
     display: inline-block;
     user-select: none;
     transition: transform 150ms ease;
-    line-height: 0;
     color: #4b4bb6;
+    width: fit-content;
 }
 
 .dropdown-title {

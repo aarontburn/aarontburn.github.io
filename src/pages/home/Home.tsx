@@ -13,7 +13,7 @@ export function Home({ changePage }: { changePage: (path: string) => void }) {
         <>
             <div className="page" id={styles["homepage"]}>
                 <h1 style={{ fontSize: '5rem' }}>Aaron Burnham</h1>
-                <h2>Software Engineer</h2>
+                <h2>Software Engineer @ Nordstrom</h2>
                 <h3>aarontburn@outlook.com</h3>
 
                 <div className={styles["home-nav"]}>
