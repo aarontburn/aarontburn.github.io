@@ -2,9 +2,10 @@ import { ReactNode } from 'react';
 import { nexusAppDetails } from './projects/nexus-app';
 import { nexusSiteDetails } from './projects/nexus-site';
 import { linkedPadDetails } from './projects/linkedpad';
-import { imageTransformationDetails } from './projects/image-transformation';
-import { studySpaceSearchDetails } from './projects/study-space-search';
-import { fantasyWordPrediction } from './projects/fantasy-word-prediction';
+import { nexusMonkeyDetails } from './projects/nexus-monkey-series';
+// import { imageTransformationDetails } from './projects/archive/image-transformation';
+// import { studySpaceSearchDetails } from './projects/archive/study-space-search';
+// import { fantasyWordPrediction } from './projects/archive/fantasy-word-prediction';
 
 
 
@@ -33,9 +34,10 @@ const projects: ProjectDetails[] = [
     nexusAppDetails,
     nexusSiteDetails,
     linkedPadDetails,
-    imageTransformationDetails,
-    studySpaceSearchDetails,
-    fantasyWordPrediction,
+    // imageTransformationDetails,
+    // studySpaceSearchDetails,
+    // fantasyWordPrediction,
+    nexusMonkeyDetails,
 
 ]
 

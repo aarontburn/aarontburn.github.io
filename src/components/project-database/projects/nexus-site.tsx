@@ -32,7 +32,7 @@ export const nexusSiteDetails: ProjectDetails = {
     </div>,
     image: nexusImage,
     stack: {
-        languages: ["TypeScript, JavaScript", "HTML", "CSS"],
+        languages: ["TypeScript", "JavaScript", "HTML", "CSS"],
         frameworksOrLibraries: ["React.js", "Node.js", "Next.js", "NextAuth.js", "MongoDB", "Mongoose"],
         technologies: ["Git/GitHub", "Vercel"],
     },

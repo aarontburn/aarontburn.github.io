@@ -76,22 +76,85 @@ export function About({ changePage }: { changePage: (path: string) => void }) {
 
                 <Section title='Technical Skills'>
                     <SkillSection title='Languages'>
-                        Java, JavaScript, TypeScript, Python, SQL, HTML, CSS, C, C#, PHP
+                        JavaScript, 
+                        TypeScript, 
+                        Python, Java, 
+                        SQL, 
+                        HTML, 
+                        CSS, 
+                        C, 
+                        C#, 
+                        PHP
                     </SkillSection>
+
                     <SkillSection title='Frameworks/Libraries'>
-                        Node.js, React.js, Electron.js, Next.js, NextAuth.js Mongoose, Java Swing, JavaFX, jQuery, Express.js, JUnit, NLTK, Tkinter
+                        Node.js, 
+                        React.js, 
+                        Electron.js, 
+                        Next.js, 
+                        NextAuth.js, 
+                        Mongoose, 
+                        jQuery, 
+                        Express.js, 
+                        JUnit
                     </SkillSection>
+
                     <SkillSection title='Technologies'>
-                        Google Firebase, Google Cloud Platform (GCP), Amazon Web Services (AWS),
-                        Oracle Cloud Database, MongoDB, MySQL, Maven, Git/GitHub, Linux, MERN, Ubuntu,
+                        Amazon Web Services (AWS), 
+                        Google Cloud Platform (GCP), 
+                        HashiCorp Vault,
+                        HashiCorp Terraform,
+                        GitHub Actions (CI/CD)
+                        GitLab CI/CD,
+                        New Relic,
+                        Splunk,
+                        Artifactory,
+
+                        Google Firebase, 
+                        Oracle Cloud Database, 
+                        MongoDB, 
+                        MySQL, 
+                        Maven, 
+                        Git,
+                        GitHub,
+                        GitLab, 
+                        MERN, 
                         Vercel
                     </SkillSection>
+
                     <SkillSection title='Programs'>
-                        IntelliJ IDEA, PyCharm, VS Code, Android Studio, Unity, Eclipse, Autodesk Fusion
+                        Visual Studio Code (VSCode), 
+                        IntelliJ IDEA,
+                        Slack,
+                        PostMan,
+                        DBeaver,
+
+                        PyCharm, 
+                        Android Studio, 
+                        Autodesk Fusion
                     </SkillSection>
+
+                    <SkillSection title='AI / AI Tools'>
+                        Claude, 
+                        Copilot, 
+                        PDLC
+                    </SkillSection>
+
                     <SkillSection title='Others'>
-                        Object-Oriented Programming (OOP), Agile, Scrum, Full-Stack, Web Development, Mobile Development, Version Control, Unit Testing,
-                        Front-end, Back-end, Natural Language Processing (NLP), Functional Programming, 3D Modeling, Model-View-Controller (MVC)
+                        Infrastructure, 
+                        CI/CD,
+                        Object-Oriented Programming (OOP), 
+                        Agile, 
+                        Scrum, 
+                        Full-Stack, 
+                        Web Development, 
+                        Mobile Development, 
+                        Version Control, 
+                        Unit Testing,
+                        Front-end, 
+                        Back-end, 
+                        Natural Language Processing (NLP), 
+                        3D Modeling
                     </SkillSection>
                 </Section>
 
